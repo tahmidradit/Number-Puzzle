@@ -194,7 +194,7 @@ namespace Eight_Puzzle
         {
             try
             {
-                if (int.Parse(textBox1.Text) == int.Parse(button1.Text) && int.Parse(textBox2.Text) == int.Parse(button5.Text) && int.Parse(textBox3.Text) == int.Parse(button9.Text))
+                if (textBox1.Text == button1.Text && textBox2.Text == button5.Text && textBox3.Text == button9.Text)
                 {
                     MessageBox.Show("You Win !", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
