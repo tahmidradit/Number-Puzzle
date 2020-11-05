@@ -16,7 +16,6 @@ namespace Eight_Puzzle
         {
             InitializeComponent();
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             if (button1.Text != "" && button4.Text == "")
@@ -30,7 +29,6 @@ namespace Eight_Puzzle
                 button1.Text = "";
             }
         }
-
         private void button2_Click(object sender, EventArgs e)
         {
             if (button2.Text != "" && button5.Text == "")
@@ -49,7 +47,6 @@ namespace Eight_Puzzle
                 button2.Text = "";
             }
         }
-
         private void button3_Click(object sender, EventArgs e)
         {
             if (button3.Text != "" && button6.Text == "")
@@ -63,7 +60,6 @@ namespace Eight_Puzzle
                 button3.Text = "";
             }
         }
-
         private void button4_Click(object sender, EventArgs e)
         {
             if (button4.Text != "" && button5.Text == "")
@@ -82,7 +78,6 @@ namespace Eight_Puzzle
                 button4.Text = "";
             }
         }
-
         private void button5_Click(object sender, EventArgs e)
         {
             if (button5.Text != "" && button8.Text == "")
@@ -106,7 +101,6 @@ namespace Eight_Puzzle
                 button5.Text = "";
             }
         }
-
         private void button6_Click(object sender, EventArgs e)
         {
             if (button6.Text != "" && button9.Text == "")
@@ -126,7 +120,6 @@ namespace Eight_Puzzle
                 button6.Text = "";
             }
         }
-
         private void button7_Click(object sender, EventArgs e)
         {
             if (button7.Text != "" && button8.Text == "")
@@ -140,7 +133,6 @@ namespace Eight_Puzzle
                 button7.Text = "";
             }
         }
-
         private void button8_Click(object sender, EventArgs e)
         {
             if (button8.Text != "" && button9.Text == "")
@@ -160,7 +152,6 @@ namespace Eight_Puzzle
                 button8.Text = "";
             }
         }
-
         private void button10_Click(object sender, EventArgs e)
         {
             button1.Text = "1";
@@ -176,7 +167,6 @@ namespace Eight_Puzzle
             textBox2.Text = "";
             textBox3.Text = "";
         }
-
         private void button9_Click(object sender, EventArgs e)
         {
             if (button9.Text != "" && button8.Text == "")
@@ -190,7 +180,6 @@ namespace Eight_Puzzle
                 button9.Text = "";
             }
         }
-
         private void button11_MouseClick(object sender, MouseEventArgs e)
         {
             Random random = new Random();
@@ -201,7 +190,6 @@ namespace Eight_Puzzle
             textBox2.Text = randomNumber2.ToString();
             textBox3.Text = randomNumber3.ToString();
         }
-
         private void button12_Click(object sender, EventArgs e)
         {
             try
@@ -217,10 +205,9 @@ namespace Eight_Puzzle
             }
             catch
             {
-                    MessageBox.Show("No random number is generated for you", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    MessageBox.Show("No random number is generated for you.", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
-
         private void button13_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Generate random numbers first and match to the numbers generated in the insets.Skip random numbers if atleast two of the generated numbers are equal and generate again.Check when done.Once matched, you'll win.", "Result", MessageBoxButtons.OK, MessageBoxIcon.Information);
